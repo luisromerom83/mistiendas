@@ -1,0 +1,8 @@
+{
+  "rewrites": [
+    {
+      "source": "/((?!api/|@|node_modules|src/|[^.]*\\.[^.]*$).*)",
+      "destination": "/index.html"
+    }
+  ]
+}

@@ -1,0 +1,80 @@
+export const mockProducts = [
+  {
+    "id": 1001,
+    "name": "Bayer Munich Home 24/25",
+    "size": "L, XL",
+    "price": 850,
+    "image_url": "https://images.unsplash.com/photo-1574629810360-7efbbe195018?q=80&w=2093&auto=format&fit=crop",
+    "type": "stock",
+    "category": "Adulto",
+    "is_favorite": true,
+    "short_id": "0001",
+    "stock_by_size": { "L": 5, "XL": 2 },
+    "stock_quantity": 7
+  },
+  {
+    "id": 1002,
+    "name": "Real Madrid Home Kit",
+    "size": "M, L",
+    "price": 900,
+    "image_url": "https://images.unsplash.com/photo-1522778119026-d647f0596c20?q=80&w=2070&auto=format&fit=crop",
+    "type": "stock",
+    "category": "Adulto",
+    "is_favorite": false,
+    "short_id": "0002",
+    "stock_by_size": { "M": 0, "L": 10 },
+    "stock_quantity": 10
+  },
+  {
+    "id": 1003,
+    "name": "Inter Miami Black Panther",
+    "size": "S, M, L",
+    "price": 750,
+    "image_url": "https://images.unsplash.com/photo-1517466787929-bc90951d0974?q=80&w=1972&auto=format&fit=crop",
+    "type": "order",
+    "category": "Adulto",
+    "is_favorite": true,
+    "short_id": "0003",
+    "stock_by_size": { "S": 0, "M": 0, "L": 0 },
+    "stock_quantity": 0
+  },
+  {
+    "id": 1004,
+    "name": "Nike Mercurial Pro",
+    "size": "27, 28, 29",
+    "price": 1200,
+    "image_url": "https://images.unsplash.com/photo-1542291026-7eec264c27ff?q=80&w=2070&auto=format&fit=crop",
+    "type": "stock",
+    "category": "Adulto",
+    "is_favorite": false,
+    "short_id": "0004",
+    "stock_by_size": { "27": 3, "28": 5, "29": 0 },
+    "stock_quantity": 8
+  },
+  {
+    "id": 1005,
+    "name": "Kit Niños Mexico 2024",
+    "size": "6, 8, 10",
+    "price": 550,
+    "image_url": "/kids-hero.png",
+    "type": "stock",
+    "category": "Niño",
+    "is_favorite": false,
+    "short_id": "0005",
+    "stock_by_size": { "6": 2, "8": 0, "10": 4 },
+    "stock_quantity": 6
+  },
+  {
+    "id": 1006,
+    "name": "Barcelona Retro 98",
+    "size": "M",
+    "price": 1500,
+    "image_url": "https://images.unsplash.com/photo-1574629810360-7efbbe195018?q=80&w=2093&auto=format&fit=crop",
+    "type": "order",
+    "category": "Adulto",
+    "is_favorite": false,
+    "short_id": "0006",
+    "stock_by_size": { "M": 0 },
+    "stock_quantity": 0
+  }
+];
