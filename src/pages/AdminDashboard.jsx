@@ -53,6 +53,12 @@ const AdminDashboard = () => {
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
           slug: tenant.slug,
+          store_name: tenant.store_name,
+          logo_url: tenant.logo_url,
+          theme_colors: tenant.theme_colors,
+          categories: tenant.categories,
+          slogan: tenant.slogan,
+          contact_phones: tenant.contact_phones,
           sizes_by_category: availableSizes
         })
       });

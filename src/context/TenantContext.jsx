@@ -36,8 +36,29 @@ export const TenantWrapper = ({ children }) => {
         const root = document.documentElement;
         if (theme.primary) root.style.setProperty('--primary', theme.primary);
         if (theme.bg) root.style.setProperty('--bg-color', theme.bg);
+        if (theme.secondary) root.style.setProperty('--secondary', theme.secondary);
+        if (theme.accent) root.style.setProperty('--accent', theme.accent);
         // Can add more custom tokens here
         
+        // Handle Fonts
+        if (data.font_url) {
+          let link = document.getElementById('tenant-font-link');
+          if (!link) {
+            link = document.createElement('link');
+            link.id = 'tenant-font-link';
+            link.rel = 'stylesheet';
+            document.head.appendChild(link);
+          }
+          link.href = data.font_url;
+        }
+
+        if (data.font_family) {
+          root.style.setProperty('--font-family', data.font_family);
+        } else {
+          // Fallback to default if not set
+          root.style.setProperty('--font-family', "'Outfit', sans-serif");
+        }
+
         document.title = data.store_name || "Tienda";
         setTenant(data);
       } catch (err) {

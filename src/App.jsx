@@ -8,7 +8,7 @@ import './index.css';
 function App() {
   return (
     <Router>
-      <div className="app-container">
+      <div className="app-wrapper">
         <Routes>
           {/* Main Landing / Root Redirect */}
           <Route path="/" element={<Navigate to="/deportux" replace />} />
